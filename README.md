@@ -42,3 +42,40 @@ Maven과 mySQL을 사용한 simple spring boot project
 > Spring boot 설정 <br>
 > JSP 사용하기 위한 확장 설치<br>
 > schedul 추가
+
+~~~ java
+
+<properties>
+	  <maven.compiler.target>11</maven.compiler.target>
+	  <maven.compiler.source>11</maven.compiler.source>
+  </properties>
+
+<dependencies>
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.33</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>4.0.1</version>
+	    <scope>provided</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
+	<dependency>
+	    <groupId>org.mindrot</groupId>
+	    <artifactId>jbcrypt</artifactId>
+	    <version>0.4</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
+  </dependencies>
+
+~~~
